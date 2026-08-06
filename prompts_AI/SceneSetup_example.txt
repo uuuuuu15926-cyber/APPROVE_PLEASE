@@ -1,0 +1,38 @@
+Scene
+├── EventSystem            ← (auto-created with Canvas)
+├── Main Camera            ← Orthographic, size ~5
+├── GameManager            ← empty GO, GameManager.cs
+├── AudioManager           ← empty GO, AudioManager.cs, AudioSource
+├── DeskManager            ← empty GO, DeskManager.cs
+│
+├── Canvas (Screen Space - Overlay)
+│   ├── DeskBackground     ← Image (your wood texture), full-screen
+│   ├── SpawnArea          ← empty RectTransform (center reference for docs)
+│   │
+│   ├── HUD
+│   │   ├── ClockText      ← TMP_Text  (top-left)
+│   │   ├── DateText       ← TMP_Text
+│   │   ├── QuotaText      ← TMP_Text  (top-right)
+│   │   ├── Strike_1       ← Image (red X, hidden)
+│   │   ├── Strike_2       ← Image (red X, hidden)
+│   │   ├── Strike_3       ← Image (red X, hidden)
+│   │   └── RulebookBtn    ← Button → ToggleRulebook()
+│   │
+│   ├── RulebookPanel      ← Panel + TMP_Text (bottom-left, hidden)
+│   │
+│   ├── StampArea (right side)
+│   │   ├── StampApprove   ← Image + StampTool.cs (isApprove=true, green)
+│   │   └── StampReject    ← Image + StampTool.cs (isApprove=false, red)
+│   │
+│   ├── DayBanner          ← full-screen Panel + TMP_Text (hidden)
+│   ├── StrikeFlash        ← full-screen red Panel, alpha 0.3 (hidden)
+│   │
+│   ├── IntroScreen        ← Panel + TMP_Text + Button "BEGIN SHIFT"
+│   ├── TutorialScreen     ← Panel + TMP_Text + Button "NEXT ▸"
+│   ├── GameOverScreen     ← Panel + TMP "YOU ARE FIRED." + Button "RETRY"
+│   └── WinScreen          ← Panel + TMP "CONGRATULATIONS." + Button "AGAIN"
+│
+└── DocumentPrefab (in Assets/Prefabs/)
+    ├── Image (paper bg, ~300×400)
+    │   └── TextMeshProUGUI (the document text, padding)
+    └── DocumentView.cs, Image (raycast target ON)

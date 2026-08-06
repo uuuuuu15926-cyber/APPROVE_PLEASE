@@ -1,0 +1,13 @@
+Assets/
+├── Scripts/
+│   ├── GameManager.cs
+│   ├── CaseGenerator.cs
+│   ├── DeskManager.cs
+│   ├── DocumentView.cs
+│   ├── StampTool.cs
+│   ├── UIController.cs
+│   ├── ScreenManager.cs
+│   └── AudioManager.cs
+├── Audio/
+├── Sprites/
+└── Fonts/
