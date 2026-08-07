@@ -8,5 +8,6 @@ NAN 제출용 게임
 - 사용AI: "Gemini-Flash-3.6", "Qwen3.8-Max"
 - 팀원: 1(솔로)
 
+[page 링크](https://uuuuuu15926-cyber.github.io/APPROVE_PLEASE/)
 만약 github page 가 정상 작동하지 않을 경우
 [itch.io 버젼 게임](https://uuuuuu15926.itch.io/approve-please)을 이용해주세요.
